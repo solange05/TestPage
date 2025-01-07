@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background1 {
+    background-image: url(../assets/img/background.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+.title {
+    text-align: center;
+    padding: 180px;
+}
+
+h1 {
+    color: white;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Estilo para el navbar */
+
+.navbar {
+    background-color: black;
+    /* padding: 0; */
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #485694; 
+}
+
+.navbar .nav {
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+}
+
+.scrollspy-example {
+    color: white;
+}
+
+#scrollspyHeading1 {
+    background-color: #0a1231;
+    padding: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#scrollspyHeading2 {
+    background-color: #1a244f;
+}
