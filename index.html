@@ -54,141 +54,827 @@
     </div>
   </div>
 
-  <div data-bs-spy="scroll" data-bs-target="#navId" data-bs-root-margin="0px 0px -70%" class="scrollspy-example rounded-2" tabindex="0">
+  <div class="scrollspy-example rounded-2" tabindex="0">
     
     <div id="scrollspyHeading1">
       <h3>Introduction</h3>
-      <p>Testing is a very important part of software development. It ensures that applications function correctly and meet user expectations. Thanks to testing, we can identify errors and improve the quality of the final product.
-      <br>
-      With this in mind, I created this website to showcase the work I did in the QA Testing course at Coderhouse. Creating this page helps me review what I learned in class about testing and continue practicing my web development skills. I believe there is no better way to apply what I've learned than through this project.</p>
+      <p>Testing is a very important part of software development. It ensures that applications function correctly and meet user expectations. Thanks to testing, we can identify errors and improve the quality of the final product. With this in mind, I created this website to showcase the work I did in the QA Testing course at Coderhouse. Creating this page helps me review what I learned in class about testing and continue practicing my web development skills. I believe there is no better way to apply what I've learned than through this project.</p>
       <img src="./assets/img/img2.png" alt="img2">
     </div>
 
     <div id="scrollspyHeading2">
       <h3>Bug Report</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dignissimos architecto ex autem repellat incidunt aperiam possimus culpa rem provident, placeat adipisci cum neque nulla vitae illo tempore eveniet delectus necessitatibus dolorum. Perferendis cumque excepturi numquam odit, sed iste quo. Quaerat adipisci ipsa nihil deserunt accusamus, officiis labore quasi deleniti. Hic, natus atque unde ad perspiciatis ex dignissimos quis repudiandae ipsa amet fugiat qui exercitationem cum placeat veritatis beatae perferendis. Perferendis accusantium magnam nisi laboriosam excepturi expedita enim aliquid blanditiis. Dolore recusandae quam ullam voluptate, distinctio eaque placeat expedita fuga harum omnis, quia dolorum inventore tenetur natus, accusantium nesciunt minus exercitationem maiores quisquam cum obcaecati repellendus! Ducimus doloribus asperiores soluta ea. Commodi perferendis quis nobis quibusdam sint, odit eum voluptates, impedit, voluptatum laborum voluptatem sit facere soluta. Maiores quisquam ullam repellat nostrum dolor blanditiis aspernatur, repudiandae eveniet qui dolore vero in assumenda ratione. Voluptatem officia fugit et, fuga provident ullam.</p>
+      <p>It is essential to document each software error with details such as severity, expected and actual results, evidence, reproduction steps, bug type, and the browser used. Similarly, test cases should include a clear name, objective, steps to follow, preconditions, expected results, and current status. This precise documentation is key to identifying and resolving errors, ensuring software quality.</p>
       
       <div class="accordion" id="accordionExample">
+
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Accordion Item #1
-            </button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Bug 1</button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">001</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Title</th>
+                    <td>Account/Profile Registration</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Status</th>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Operating System or Testing Device</th>
+                    <td colspan="2">
+                      <ul>
+                        <li>Sistema operativo: Windows 11 Home Single Language</li>
+                        <li>Dispositivo de prueba: Notebook HP Pavillon</li>
+                        <li>Navegador: Google Chrome</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Description</th>
+                    <td>The header of the page needs an option for new user registration. However, this option is absent both in the header and throughout the rest of the page.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Preconditions</th>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Priority</th>
+                    <td colspan="2">High</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Type of Defect</th>
+                    <td>Component/ Functional
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Steps</th>
+                    <td>
+                      <ol>
+                        <li>Enter the page: <a href="https://demo.testim.io/" target="_blank">https://demo.testim.io/</a></li>
+                        <li>Look for the registration option in the header.</li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Expected Result</th>
+                    <td colspan="2">Registration option visible and successful.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Actual Result</th>
+                    <td colspan="2">Registration option absent.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Evidence</th>
+                    <td colspan="2">
+                      <img src="./assets/img/evidence1.png" alt="evidence1">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
-            </button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">Bug 2</button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+
+          <div id="collapse2" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">002</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Title</th>
+                    <td>Not Responsive</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Status</th>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Operating System or Testing Device</th>
+                    <td colspan="2">
+                      <ul>
+                        <li>Sistema operativo: Windows 11 Home Single Language</li>
+                        <li>Dispositivo de prueba: Notebook HP Pavillon</li>
+                        <li>Navegador: Google Chrome</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Description</th>
+                    <td>When inspecting the webpage, several overlapping elements can be observed. Therefore, the page is not responsive.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Preconditions</th>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Priority</th>
+                    <td colspan="2">High</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Type of Defect</th>
+                    <td>Visual</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Steps</th>
+                    <td>
+                      <ol>
+                        <li>Enter the page: <a href="https://demo.testim.io/" target="_blank">https://demo.testim.io/</a></li>
+                        <li>Be in any section of the page.</li>
+                        <li>Open the inspector.</li>
+                        <li>Look for overlapping elements. A mobile device (Samsung Galaxy S20 Ultra) was used as an example in the inspector.</li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Expected Result</th>
+                    <td colspan="2">The page should be responsive.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Actual Result</th>
+                    <td colspan="2">Several overlapping elements are displayed.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Evidence</th>
+                    <td colspan="2">
+                      <img src="./assets/img/evidence2.png" alt="evidence2">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
-            </button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">Bug 3</button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+
+          <div id="collapse3" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">003</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Title</th>
+                    <td>Social Media Links</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Status</th>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Operating System or Testing Device</th>
+                    <td colspan="2">
+                      <ul>
+                        <li>Sistema operativo: Windows 11 Home Single Language</li>
+                        <li>Dispositivo de prueba: Notebook HP Pavillon</li>
+                        <li>Navegador: Google Chrome</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Description</th>
+                    <td>The social media links are not linked to their corresponding pages. The mouse cursor does not change when hovering over the icons.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Preconditions</th>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Priority</th>
+                    <td colspan="2">Low</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Type of Defect</th>
+                    <td>Components</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Steps</th>
+                    <td>
+                      <ol>
+                        <li>Enter the page: <a href="https://demo.testim.io/" target="_blank">https://demo.testim.io/</a></li>
+                        <li>Go to the footer of the page.</li>
+                        <li>Click on each social media icon.</li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Expected Result</th>
+                    <td colspan="2">Each social media page should open according to the icon indicated.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Actual Result</th>
+                    <td colspan="2">Social media links do not open.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Evidence</th>
+                    <td colspan="2">
+                      <img src="./assets/img/evidence3.png" alt="evidence3">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Accordion Item #1
-            </button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">Bug 4</button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+
+          <div id="collapse4" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">004</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Title</th>
+                    <td>Update Year</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Status</th>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Operating System or Testing Device</th>
+                    <td colspan="2">
+                      <ul>
+                        <li>Sistema operativo: Windows 11 Home Single Language</li>
+                        <li>Dispositivo de prueba: Notebook HP Pavillon</li>
+                        <li>Navegador: Google Chrome</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Description</th>
+                    <td>In the footer, the copyright year is outdated.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Preconditions</th>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Priority</th>
+                    <td colspan="2">Low</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Type of Defect</th>
+                    <td>Content</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Steps</th>
+                    <td>
+                      <ol>
+                        <li>Enter the page: <a href="https://demo.testim.io/" target="_blank">https://demo.testim.io/</a></li>
+                        <li>Scroll down to the bottom of the page (Footer).</li>
+                        <li>Check the copyright year.</li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Expected Result</th>
+                    <td colspan="2">Updated copyright year.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Actual Result</th>
+                    <td colspan="2">Outdated copyright year.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Evidence</th>
+                    <td colspan="2">
+                      <img src="./assets/img/evidence4.png" alt="evidence4">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
-            </button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">Bug 5</button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+
+          <div id="collapse5" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">005</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Title</th>
+                    <td>Children Quantity Options</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Status</th>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Operating System or Testing Device</th>
+                    <td colspan="2">
+                      <ul>
+                        <li>Sistema operativo: Windows 11 Home Single Language</li>
+                        <li>Dispositivo de prueba: Notebook HP Pavillon</li>
+                        <li>Navegador: Google Chrome</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Description</th>
+                    <td>The section below the header allows customization of departure and return dates, as well as the number of travelers aged 0 to 7 years and adults over 18 years. However, ages between 8 and 17 years are absent.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Preconditions</th>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Priority</th>
+                    <td colspan="2">High</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Type of Defect</th>
+                    <td>Component</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Steps</th>
+                    <td>
+                      <ol>
+                        <li>Enter the page: <a href="https://demo.testim.io/" target="_blank">https://demo.testim.io/</a></li>
+                        <li>Locate below the header.</li>
+                        <li>Check the ages in: adults (18+) and children (0-7).</li>
+                        <li>Select adults and children.</li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Expected Result</th>
+                    <td colspan="2">Complete quantity options (age).</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Actual Result</th>
+                    <td colspan="2">Incomplete quantity options (age).</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Evidence</th>
+                    <td colspan="2">
+                      <img src="./assets/img/evidence5.png" alt="evidence5">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
-            </button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">Bug 6</button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+
+          <div id="collapse6" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">006</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Title</th>
+                    <td>Lack of Home or Menu Option</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Status</th>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Operating System or Testing Device</th>
+                    <td colspan="2">
+                      <ul>
+                        <li>Sistema operativo: Windows 11 Home Single Language</li>
+                        <li>Dispositivo de prueba: Notebook HP Pavillon</li>
+                        <li>Navegador: Google Chrome</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Description</th>
+                    <td>Within the page, there is no option that allows navigation to the menu or home. This creates a poor user experience, as users have to reload the page each time they want to go to the menu.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Preconditions</th>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Priority</th>
+                    <td colspan="2">High</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Type of Defect</th>
+                    <td>Content</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Steps</th>
+                    <td>
+                      <ol>
+                        <li>Enter the page: <a href="https://demo.testim.io/login" target="_blank">https://demo.testim.io/login</a></li>
+                        <li>Look for the home option.</li>
+                        <li>Log in.</li>
+                        <li>Look for the home option.</li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Expected Result</th>
+                    <td colspan="2">Navigate to Home or Menu.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Actual Result</th>
+                    <td colspan="2">Absence of the option to go to Menu or Home.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Evidence</th>
+                    <td colspan="2">
+                      <img src="./assets/img/evidence6.png" alt="evidence6">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Accordion Item #1
-            </button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">Bug 7</button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+
+          <div id="collapse7" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">007</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Title</th>
+                    <td>Add more information about travel destinations</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Status</th>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Operating System or Testing Device</th>
+                    <td colspan="2">
+                      <ul>
+                        <li>Sistema operativo: Windows 11 Home Single Language</li>
+                        <li>Dispositivo de prueba: Notebook HP Pavillon</li>
+                        <li>Navegador: Google Chrome</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Description</th>
+                    <td>The available information about the trips is incomplete and presented with filler text. This prevents users from obtaining the necessary information to make informed decisions.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Preconditions</th>
+                    <td>Information about each trip.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Priority</th>
+                    <td colspan="2">High</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Type of Defect</th>
+                    <td>Content</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Steps</th>
+                    <td>
+                      <ol>
+                        <li>Enter the page: <a href="https://demo.testim.io" target="_blank">https://demo.testim.io</a></li>
+                        <li>Go to the travel section on the same page.</li>
+                        <li>Read the information.</li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Expected Result</th>
+                    <td colspan="2">Complete information.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Actual Result</th>
+                    <td colspan="2">Incomplete information.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Evidence</th>
+                    <td colspan="2">
+                      <img src="./assets/img/evidence7.png" alt="evidence7">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
-            </button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true" aria-controls="collapse8">Bug 8</button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+
+          <div id="collapse8" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">008</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Title</th>
+                    <td>Scroll to Log In</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Status</th>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Operating System or Testing Device</th>
+                    <td colspan="2">
+                      <ul>
+                        <li>Sistema operativo: Windows 11 Home Single Language</li>
+                        <li>Dispositivo de prueba: Notebook HP Pavillon</li>
+                        <li>Navegador: Google Chrome</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Description</th>
+                    <td>There is an unnecessary scroll on the right side of the LOG IN.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Preconditions</th>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Priority</th>
+                    <td colspan="2">Low</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Type of Defect</th>
+                    <td>Visual</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Steps</th>
+                    <td>
+                      <ol>
+                        <li>Enter the page: <a href="https://demo.testim.io/login" target="_blank">https://demo.testim.io/login</a></li>
+                        <li>Locate on the right side of the page.</li>
+                        <li>Click the scroll.</li>
+                        <li>Scroll to see if there is more content than what is displayed on the screen.</li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Expected Result</th>
+                    <td colspan="2">Existence of the scroll, as long as it is necessary.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Actual Result</th>
+                    <td colspan="2">Unnecessary scroll.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Evidence</th>
+                    <td colspan="2">
+                      <img src="./assets/img/evidence8.png" alt="evidence8">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
-            </button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="true" aria-controls="collapse9">Bug 9</button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+
+          <div id="collapse9" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">009</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Title</th>
+                    <td>Login Data</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Status</th>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Operating System or Testing Device</th>
+                    <td colspan="2">
+                      <ul>
+                        <li>Sistema operativo: Windows 11 Home Single Language</li>
+                        <li>Dispositivo de prueba: Notebook HP Pavillon</li>
+                        <li>Navegador: Google Chrome</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Description</th>
+                    <td>For the username, it allows access with a minimum of 3 characters, and for the password, just 1 character, including special characters (in this case, using “@”). This may affect the security level of user data.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Preconditions</th>
+                    <td>Have registered users.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Priority</th>
+                    <td colspan="2">High</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Type of Defect</th>
+                    <td>Component</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Steps</th>
+                    <td>
+                      <ol>
+                        <li>Enter the page: <a href="https://demo.testim.io/login" target="_blank">https://demo.testim.io/login</a></li>
+                        <li>Enter 3 characters in the username, for example: 123, abc, etc.</li>
+                        <li>Enter 1 character in the password, for example: @, 0, s, etc.</li>
+                        <li>Click LOG IN.</li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Expected Result</th>
+                    <td colspan="2">Log in with reasonable and secure numbers and characters.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Actual Result</th>
+                    <td colspan="2">Login with too few characters.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Evidence</th>
+                    <td colspan="2">
+                      <img src="./assets/img/evidence9.png" alt="evidence9">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+
         </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
-            </button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="true" aria-controls="collapse10">Bug 10</button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+
+          <div id="collapse10" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">010</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Title</th>
+                    <td>Incorrect File Uploaded</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Status</th>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Operating System or Testing Device</th>
+                    <td colspan="2">
+                      <ul>
+                        <li>Sistema operativo: Windows 11 Home Single Language</li>
+                        <li>Dispositivo de prueba: Notebook HP Pavillon</li>
+                        <li>Navegador: Google Chrome</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Description</th>
+                    <td>When making a purchase, in the section where an image is requested, a different image appears from the one that was previously selected. This issue can cause confusion and affect the user experience.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Preconditions</th>
+                    <td>Be in the purchase section.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Priority</th>
+                    <td colspan="2">High</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Type of Defect</th>
+                    <td>Content</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Steps</th>
+                    <td>
+                      <ol>
+                        <li>Enter the page: <a href="https://demo.testim.io" target="_blank">https://demo.testim.io</a></li>
+                        <li>Go to the ticket section.</li>
+                        <li>Choose any destination.</li>
+                        <li>Select book.</li>
+                        <li>Fill in the details at checkout.</li>
+                        <li>Attach the desired file.</li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Expected Result</th>
+                    <td colspan="2">View selected file.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Actual Result</th>
+                    <td colspan="2">Incorrect image.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Evidence</th>
+                    <td colspan="2">
+                      <img src="./assets/img/evidence10.png" alt="evidence10">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+
         </div>
+
       </div>
 
     </div>
@@ -227,7 +913,7 @@
         </div>
         <h5>Thank you so much for visiting my website.</h5>
       </div>
-  </footer>
+    </footer>
 
   </div>
   

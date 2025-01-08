@@ -129,3 +129,7 @@ footer {
 .footerText {
     padding-top: 50px;
 }
+
+img {
+    width: 70%;
+}
