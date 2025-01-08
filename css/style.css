@@ -14,7 +14,7 @@
 
 .title {
     text-align: center;
-    padding: 180px;
+    padding-top: 220px;
 }
 
 h1 {
@@ -26,7 +26,7 @@ h1 {
 
 h2 {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
@@ -65,4 +65,67 @@ h2 {
 
 #scrollspyHeading2 {
     background-color: #1a244f;
+    padding: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#scrollspyHeading3 {
+    background-color: #0a1231;
+    padding: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#scrollspyHeading4 {
+    background-color: #1a244f;
+    padding: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#scrollspyHeading5 {
+    background-color: #0a1231;
+    padding: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#scrollspyHeading6 {
+    background-color: #1a244f;
+    padding: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#scrollspyHeading7 {
+    background-color: #0a1231;
+    padding: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.icon{
+    border-radius: 50px;
+    color: white;
+    font-size: 50px;
+}
+.icon:hover{
+    transform: scale(1.2);
+}
+
+footer {
+    height: 500px;
+}
+
+.footerText {
+    padding-top: 50px;
 }
