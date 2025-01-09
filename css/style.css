@@ -133,3 +133,15 @@ footer {
 img {
     width: 70%;
 }
+
+table .successful {
+    background-color: green;
+}
+
+table .failed {
+    background-color: red;
+}
+
+#TableScrollspyHeading3, th, td {
+    border: 1px solid black;
+}
