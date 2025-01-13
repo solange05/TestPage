@@ -4,19 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPACE & BEYOND</title>
-
-    <!-- black -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
-
-    <!-- blue -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-
-    <!-- Fonts -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
+    <link rel="shortcut icon" href="./assets/img/desktopTest.png" type="image/x-icon">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -1349,7 +1341,7 @@
         <div id="accordion">
           <!-- primeraparte -->
           <div class="collapse" id="desktop" data-bs-parent="#accordion">
-            <div class="card card-body">
+            <div id="desktopCard" class="card card-body">
               <table class="table">
                 <thead>
                   <tr>
@@ -1685,7 +1677,6 @@
           </div>
         </div>
 
-        <h3>General Conclusion</h3>
         <p>
           The performance analysis of Space & Beyond shows a clear difference
           between the mobile and desktop versions of the website. The desktop
@@ -1732,87 +1723,32 @@
             <div
               id="collapse01"
               class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
+              data-bs-parent="#accordionExample1"
             >
               <div class="accordion-body">
                 <table class="table">
                   <thead>
                     <tr>
-                      <th scope="col">ID</th>
-                      <th scope="col">001</th>
+                      <th scope="col">Analysis of API Requests</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Title</th>
-                      <td>Account/Profile Registration</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Status</th>
-                      <td>Open</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Operating System or Testing Device</th>
-                      <td colspan="2">
-                        <ul>
-                          <li>
-                            Sistema operativo: Windows 11 Home Single Language
-                          </li>
-                          <li>Dispositivo de prueba: Notebook HP Pavillon</li>
-                          <li>Navegador: Google Chrome</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Description</th>
-                      <td>
-                        The header of the page needs an option for new user
-                        registration. However, this option is absent both in the
-                        header and throughout the rest of the page.
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Preconditions</th>
-                      <td>-</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Priority</th>
-                      <td colspan="2">High</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Type of Defect</th>
-                      <td>Component/ Functional</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Steps</th>
                       <td>
                         <ol>
-                          <li>
-                            Enter the page:
-                            <a href="https://demo.testim.io/" target="_blank"
-                              >https://demo.testim.io/</a
-                            >
-                          </li>
-                          <li>
-                            Look for the registration option in the header.
+                          <li>Request URL: https://demo.testim.io/destinations
+                            <ul>
+                              <li>Request Method: GET</li>
+                              <li>Status Code: 404 Not Found</li>
+                              <li>Analysis: This URL is not available, indicating a possible server issue or that the path is incorrect.</li>
+                            </ul>
                           </li>
                         </ol>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">Expected Result</th>
-                      <td colspan="2">
-                        Registration option visible and successful.
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Actual Result</th>
-                      <td colspan="2">Registration option absent.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Evidence</th>
-                      <td colspan="2">
-                        <img src="./assets/img/evidence1.png" alt="evidence1" />
+                      <td>
+                        <img src="./assets/img/api1.png" alt="api1">
                       </td>
                     </tr>
                   </tbody>
@@ -1827,102 +1763,42 @@
                 class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapse2"
+                data-bs-target="#collapse02"
                 aria-expanded="false"
-                aria-controls="collapse2"
+                aria-controls="collapse02"
               >
-                Bug 2
+                Request 2
               </button>
             </h2>
-
             <div
-              id="collapse2"
+              id="collapse02"
               class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
+              data-bs-parent="#accordionExample1"
             >
               <div class="accordion-body">
                 <table class="table">
                   <thead>
                     <tr>
-                      <th scope="col">ID</th>
-                      <th scope="col">002</th>
+                      <th scope="col">Analysis of API Requests</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Title</th>
-                      <td>Not Responsive</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Status</th>
-                      <td>Open</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Operating System or Testing Device</th>
-                      <td colspan="2">
-                        <ul>
-                          <li>
-                            Sistema operativo: Windows 11 Home Single Language
-                          </li>
-                          <li>Dispositivo de prueba: Notebook HP Pavillon</li>
-                          <li>Navegador: Google Chrome</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Description</th>
-                      <td>
-                        When inspecting the webpage, several overlapping
-                        elements can be observed. Therefore, the page is not
-                        responsive.
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Preconditions</th>
-                      <td>-</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Priority</th>
-                      <td colspan="2">High</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Type of Defect</th>
-                      <td>Visual</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Steps</th>
                       <td>
                         <ol>
-                          <li>
-                            Enter the page:
-                            <a href="https://demo.testim.io/" target="_blank"
-                              >https://demo.testim.io/</a
-                            >
-                          </li>
-                          <li>Be in any section of the page.</li>
-                          <li>Open the inspector.</li>
-                          <li>
-                            Look for overlapping elements. A mobile device
-                            (Samsung Galaxy S20 Ultra) was used as an example in
-                            the inspector.
+                          <li>Request URL: https://fonts.googleapis.com/icon?family=Material+Icons
+                            <ul>
+                              <li>Request Method: GET</li>
+                              <li>Status Code: 200 OK (from disk cache)</li>
+                              <li>Analysis: This request was completed successfully, indicating that the icons are loading correctly from the cache.</li>
+                            </ul>
                           </li>
                         </ol>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">Expected Result</th>
-                      <td colspan="2">The page should be responsive.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Actual Result</th>
-                      <td colspan="2">
-                        Several overlapping elements are displayed.
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Evidence</th>
-                      <td colspan="2">
-                        <img src="./assets/img/evidence2.png" alt="evidence2" />
+                      <td>
+                        <img src="./assets/img/api2.png" alt="api2">
                       </td>
                     </tr>
                   </tbody>
@@ -1937,98 +1813,42 @@
                 class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapse3"
+                data-bs-target="#collapse03"
                 aria-expanded="false"
-                aria-controls="collapse3"
+                aria-controls="collapse03"
               >
-                Bug 3
+                Request 3
               </button>
             </h2>
-
             <div
-              id="collapse3"
+              id="collapse03"
               class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
+              data-bs-parent="#accordionExample1"
             >
               <div class="accordion-body">
                 <table class="table">
                   <thead>
                     <tr>
-                      <th scope="col">ID</th>
-                      <th scope="col">003</th>
+                      <th scope="col">Analysis of API Requests</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Title</th>
-                      <td>Social Media Links</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Status</th>
-                      <td>Open</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Operating System or Testing Device</th>
-                      <td colspan="2">
-                        <ul>
-                          <li>
-                            Sistema operativo: Windows 11 Home Single Language
-                          </li>
-                          <li>Dispositivo de prueba: Notebook HP Pavillon</li>
-                          <li>Navegador: Google Chrome</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Description</th>
-                      <td>
-                        The social media links are not linked to their
-                        corresponding pages. The mouse cursor does not change
-                        when hovering over the icons.
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Preconditions</th>
-                      <td>-</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Priority</th>
-                      <td colspan="2">Low</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Type of Defect</th>
-                      <td>Components</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Steps</th>
                       <td>
                         <ol>
-                          <li>
-                            Enter the page:
-                            <a href="https://demo.testim.io/" target="_blank"
-                              >https://demo.testim.io/</a
-                            >
+                          <li>Request URL: https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmSU5fBBc4.woff2
+                            <ul>
+                              <li>Request Method: GET</li>
+                              <li>Status Code: 200 OK (from memory cache)</li>
+                              <li>Analysis: Similar to the previous one, this request was successful and loaded from the cache, which is positive for performance.</li>
+                            </ul>
                           </li>
-                          <li>Go to the footer of the page.</li>
-                          <li>Click on each social media icon.</li>
                         </ol>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">Expected Result</th>
-                      <td colspan="2">
-                        Each social media page should open according to the icon
-                        indicated.
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Actual Result</th>
-                      <td colspan="2">Social media links do not open.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Evidence</th>
-                      <td colspan="2">
-                        <img src="./assets/img/evidence3.png" alt="evidence3" />
+                      <td>
+                        <img src="./assets/img/api3.png" alt="api3">
                       </td>
                     </tr>
                   </tbody>
@@ -2043,93 +1863,42 @@
                 class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapse4"
+                data-bs-target="#collapse04"
                 aria-expanded="false"
-                aria-controls="collapse4"
+                aria-controls="collapse04"
               >
-                Bug 4
+                Request 4
               </button>
             </h2>
-
             <div
-              id="collapse4"
+              id="collapse04"
               class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
+              data-bs-parent="#accordionExample1"
             >
               <div class="accordion-body">
                 <table class="table">
                   <thead>
                     <tr>
-                      <th scope="col">ID</th>
-                      <th scope="col">004</th>
+                      <th scope="col">Analysis of API Requests</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Title</th>
-                      <td>Update Year</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Status</th>
-                      <td>Open</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Operating System or Testing Device</th>
-                      <td colspan="2">
-                        <ul>
-                          <li>
-                            Sistema operativo: Windows 11 Home Single Language
-                          </li>
-                          <li>Dispositivo de prueba: Notebook HP Pavillon</li>
-                          <li>Navegador: Google Chrome</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Description</th>
-                      <td>In the footer, the copyright year is outdated.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Preconditions</th>
-                      <td>-</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Priority</th>
-                      <td colspan="2">Low</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Type of Defect</th>
-                      <td>Content</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Steps</th>
                       <td>
                         <ol>
-                          <li>
-                            Enter the page:
-                            <a href="https://demo.testim.io/" target="_blank"
-                              >https://demo.testim.io/</a
-                            >
+                          <li>Request URL: https://demo.testim.io/checkout
+                            <ul>
+                              <li>Request Method: GET</li>
+                              <li>Status Code: 404 Not Found</li>
+                              <li>Analysis: Similar to the first request, this URL also returns a 404 error, suggesting issues accessing this path.</li>
+                            </ul>
                           </li>
-                          <li>
-                            Scroll down to the bottom of the page (Footer).
-                          </li>
-                          <li>Check the copyright year.</li>
                         </ol>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">Expected Result</th>
-                      <td colspan="2">Updated copyright year.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Actual Result</th>
-                      <td colspan="2">Outdated copyright year.</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Evidence</th>
-                      <td colspan="2">
-                        <img src="./assets/img/evidence4.png" alt="evidence4" />
+                      <td>
+                        <img src="./assets/img/api4.png" alt="api4">
                       </td>
                     </tr>
                   </tbody>
@@ -2144,99 +1913,42 @@
                 class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapse5"
+                data-bs-target="#collapse05"
                 aria-expanded="false"
-                aria-controls="collapse5"
+                aria-controls="collapse05"
               >
-                Bug 5
+                Request 5
               </button>
             </h2>
-
             <div
-              id="collapse5"
+              id="collapse05"
               class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
+              data-bs-parent="#accordionExample1"
             >
               <div class="accordion-body">
                 <table class="table">
                   <thead>
                     <tr>
-                      <th scope="col">ID</th>
-                      <th scope="col">005</th>
+                      <th scope="col">Analysis of API Requests</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Title</th>
-                      <td>Children Quantity Options</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Status</th>
-                      <td>Open</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Operating System or Testing Device</th>
-                      <td colspan="2">
-                        <ul>
-                          <li>
-                            Sistema operativo: Windows 11 Home Single Language
-                          </li>
-                          <li>Dispositivo de prueba: Notebook HP Pavillon</li>
-                          <li>Navegador: Google Chrome</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Description</th>
-                      <td>
-                        The section below the header allows customization of
-                        departure and return dates, as well as the number of
-                        travelers aged 0 to 7 years and adults over 18 years.
-                        However, ages between 8 and 17 years are absent.
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Preconditions</th>
-                      <td>-</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Priority</th>
-                      <td colspan="2">High</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Type of Defect</th>
-                      <td>Component</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Steps</th>
                       <td>
                         <ol>
-                          <li>
-                            Enter the page:
-                            <a href="https://demo.testim.io/" target="_blank"
-                              >https://demo.testim.io/</a
-                            >
+                          <li>Request URL: https://demo.testim.io/4a489998a5feaa4c60a0bc8bbd46b3d9.jpg
+                            <ul>
+                              <li>Request Method: GET</li>
+                              <li>Status Code: 200 OK (from memory cache)</li>
+                              <li>Analysis: This request was successful, indicating that the image is loading correctly from the cache.</li>
+                            </ul>
                           </li>
-                          <li>Locate below the header.</li>
-                          <li>
-                            Check the ages in: adults (18+) and children (0-7).
-                          </li>
-                          <li>Select adults and children.</li>
                         </ol>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">Expected Result</th>
-                      <td colspan="2">Complete quantity options (age).</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Actual Result</th>
-                      <td colspan="2">Incomplete quantity options (age).</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Evidence</th>
-                      <td colspan="2">
-                        <img src="./assets/img/evidence5.png" alt="evidence5" />
+                      <td>
+                        <img src="./assets/img/api5.png" alt="api5">
                       </td>
                     </tr>
                   </tbody>
@@ -2244,9 +1956,10 @@
               </div>
             </div>
           </div>
+
+
         </div>
 
-        <h3>Conclusion</h3>
         <p>
           The research reveals that there are two URLs that return 404 errors,
           which is a significant issue as it prevents access to important
