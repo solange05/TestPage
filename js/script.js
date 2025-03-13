@@ -2,9 +2,9 @@ $(document).ready(function() {
     $('a[data-bs-toggle="collapse"]').on('click', function() {
         setTimeout(function() {
             $('html, body').animate({
-                scrollTop: $('#accordion').offset().top -32
-            }, 0); 
-        }, 0); 
+                scrollTop: $('#accordion').offset().top -56
+            }, 500); 
+        }, 300); 
     });
 });
 

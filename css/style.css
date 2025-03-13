@@ -1,190 +1,366 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.background1 {
-    background-image: url(../assets/img/background.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 600px;
-}
-
-.title {
-    text-align: center;
-    padding-top: 220px;
-}
-
-h1 {
-    color: white;
-    font-size: 80px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-h2 {
-    color: white;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-/* Estilo para el navbar */
-
+/* Style Navbar */
 .navbar {
-    background-color: black;
-    /* padding: 0; */
+  background-color: black;
 }
 
 .nav-link {
-    color: white;
+  color: white;
 }
 
 .nav-link:hover {
-    color: #485694; 
+  color: #485694;
 }
 
 .navbar .nav {
-    justify-content: center;
-    width: 100%;
-    background-color: black;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
 }
 
-.scrollspy-example {
-    color: white;
+/* Style Backgroung 1 */
+.background1 {
+  background-image: url(../assets/img/background.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
 }
 
-#scrollspyHeading1 {
-    background-color: #0a1231;
-    padding: 100px;
-    text-align: center;
-    font-size: 20px;
+.title {
+  text-align: center;
+  padding-top: 220px;
 }
 
-#scrollspyHeading2 {
-    background-color: #1a244f;
-    padding: 100px;
-    text-align: center;
-    font-size: 20px;
+h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
 }
 
-#scrollspyHeading3 {
-    background-color: #0a1231;
-    padding: 100px;
-    text-align: center;
-    font-size: 20px;
+h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-#scrollspyHeading4 {
-    background-color: #1a244f;
-    padding: 100px;
-    text-align: center;
-    font-size: 20px;
+.scrollspy {
+  color: white;
 }
 
-#scrollspyHeading5 {
-    background-color: #0a1231;
-    padding: 100px;
-    text-align: center;
-    font-size: 20px;
+/* Style H3 */
+h3 {
+  margin: 0;
+  padding: 100px 100px 0px 100px;
+  font-size: 35px;
+  text-align: center;
 }
 
-#scrollspyHeading6 {
-    background-color: #1a244f;
-    padding: 100px;
-    text-align: center;
-    font-size: 20px;
+.h3Style1 {
+  background-color: #0a1231;
 }
 
-#scrollspyHeading7 {
-    background-color: #0a1231;
-    padding: 100px;
-    text-align: center;
-    font-size: 20px;
+.h3Style2 {
+  background-color: #1a244f;
 }
 
-.icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px;
+.h3Style3 {
+  background-color: #0a1231;
+  padding: 20px 100px 10px 100px;
 }
 
-.icon{
-    border-radius: 50px;
-    color: white;
-    font-size: 50px;
-}
-.icon:hover{
-    transform: scale(1.2);
-}
-
-footer {
-    height: 500px;
+/* Style P */
+p {
+  margin: 0;
+  padding: 10px 100px;
+  font-size: 25px;
+  text-align: center;
 }
 
-.footerText {
-    padding-top: 50px;
+.pStyle1 {
+  background-color: #0a1231;
+}
+
+.pStyle2 {
+  background-color: #1a244f;
+}
+
+.pStyle3 {
+  padding-bottom: 100px;
+}
+
+/* Table */
+.table {
+  margin: 0;
+}
+
+/* Introduction */
+.divImg {
+  background-color: #0a1231;
+  text-align: center;
+}
+
+.imgIntroduction {
+  height: 500px;
+  width: 700px;
+  background-color: #0a1231;
+  margin-bottom: 100px;
+}
+
+/* Bug Report */
+#accordionBugReport {
+  padding: 0px 90px 100px 90px;
+  background-color: #1a244f;
+}
+
+th,
+td {
+  border: 1px solid black;
 }
 
 img {
-    width: 70%;
+  width: 100%;
+}
+
+/* Test Report */
+.table-container {
+  background-color: #0a1231;
+  padding: 0px 90px 10px 90px;
+}
+
+#tableTestReport {
+  margin: 0px;
 }
 
 table .successful {
-    background-color: green;
+  background-color: green;
 }
 
 table .failed {
-    background-color: red;
+  background-color: red;
 }
 
-#TableScrollspyHeading3, th, td {
-    border: 1px solid black;
+/* Performance Analysis */
+#sectionCard {
+  background-color: #1a244f;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
 }
 
 .card {
-    color: black;
+  /* color: black; */
+  text-align: center;
 }
 
-#sectionScrollspyHeading4 {
-    display: flex;
-    justify-content: space-around;
+.imgCard {
+  padding: 20px;
 }
 
-.imgScrollspyHeading4 {
-    padding: 20px;
+.btnCard {
+  background-color: #0a1231;
+  color: white;
+}
+
+.btnCard:hover {
+  background-color: #1a244f;
+  color: white;
 }
 
 #accordion {
-    padding: 25px;
+  padding: 0px 90px;
+  background-color: #1a244f;
 }
 
-.btnScrollspyHeading4 {
-    background-color: #0a1231;
-    color: white;
-}
-
-.btnScrollspyHeading4:hover {
-    background-color: #1a244f;
-    color: white;
-}
-
-/* Estilo para la lista ordenada */
 ol {
-    list-style-position: inside; /* Mueve los números dentro del contenedor */
-    padding-left: 0; /* Elimina el padding izquierdo */
+  list-style-position: inside;
+  padding-left: 0;
 }
 
-/* Estilo para la lista desordenada */
-ul {
-    margin: 0; /* Elimina el margen superior e inferior */
-    padding-left: 20px; /* Espacio a la izquierda para la lista desordenada */
-}
-
+/* APIs */
 #accordionExample1 {
-    padding: 30px
+  padding: 0px 90px;
+  background-color: #0a1231;
+}
+
+/* Conclusion */
+.divImgColor,
+.imgIntroductionColor {
+  background-color: #1a244f;
+}
+
+/* Contact */
+#divFooter {
+  background-color: #0a1231;
+  padding: 162px 0px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 35px;
+}
+
+h5 {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.icon {
+  border-radius: 50px;
+  color: white;
+  font-size: 50px;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+/* footer {
+  height: 500px;
+} */
+
+/* .footerText {
+  padding-top: 50px;
+  background-color: red;
+} */
+
+/* ------------------------------ */
+/* #scrollspyHeading5 {
+  background-color: #0a1231;
+  padding: 100px;
+  text-align: center;
+  font-size: 20px;
+} */
+
+/* ? */
+/* ul {
+  margin: 0; 
+  padding-left: 20px; 
+} */
+
+/* .accordion-body {
+  overflow-x: auto;
+} */
+
+@media (max-width: 850px) {
+  body {
+    background-color: red;
+  }
+
+  .title {
+    padding: 245px 50px 0px 50px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    padding: 100px 50px 0px 50px;
+    font-size: 30px;
+  }
+
+  .h3Style3 {
+    padding: 20px 50px 10px 50px;
+  }
+
+  p {
+    padding: 10px 40px;
+    font-size: 20px;
+  }
+
+  .imgIntroduction {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #accordionBugReport {
+    padding: 0px 10px 100px 10px;
+  }
+
+  .table-container {
+    padding: 0px 10px 10px 10px;
+  }
+
+  #sectionCard {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #accordion {
+    padding: 0px;
+  }
+
+  #accordionExample1 {
+    padding: 0px;
+  }
+
+  .accordion-body td {
+    word-break: break-word;
+    /* overflow-wrap: anywhere; */
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    background-color: blue;
+  }
+
+  .title {
+    padding: 290px 20px 0px 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    padding: 100px 0px 0px 0px;
+    font-size: 28px;
+  }
+
+  .h3Style3 {
+    padding: 20px 0px 10px 0px;
+  }
+
+  p {
+    padding: 10px 10px;
+    font-size: 18px;
+  }
+
+  #accordionBugReport {
+    padding: 0px 0px 100px 0px;
+  }
+
+  .accordion-body {
+    overflow-x: auto;
+  }
+
+  .table-container {
+    padding: 0px 0px 10px 0px;
+    overflow-x: auto;
+  }
 }
